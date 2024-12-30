@@ -103,7 +103,7 @@ def init_stats_xlsx():
         ws.title = "Stats"
         # Шапка
         ws["A1"] = "post_id"
-        ws["B1"] = "content"        # <-- столбец для текста поста
+        ws["B1"] = "content"
         ws["C1"] = "likes"
         ws["D1"] = "comments"
         ws["E1"] = "shares"
