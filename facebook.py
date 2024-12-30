@@ -125,7 +125,7 @@ def update_post_stats(post_id: str, likes: int, comments: int, shares: int, cont
     wb = openpyxl.load_workbook(STATS_XLSX_FILE)
     ws = wb["Stats"]
 
-    # Ищем существующую строку (где A=post_id)
+    # Ищем существующую строку (с post_id)
     found_row = None
     for row in range(2, ws.max_row + 1):
         cell_value = ws.cell(row=row, column=1).value
